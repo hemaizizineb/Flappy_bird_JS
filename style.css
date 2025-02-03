@@ -1,0 +1,76 @@
+*{
+    margin:0 ;
+    padding:0 ;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+.background{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(69, 149, 181);
+    background-image: url(images/background.png);
+    background-position: 100%;
+}
+
+.bird {
+
+    height: 60px;
+    width: 80px;
+    position: fixed;
+    top: 40vh;
+    left: 30vw;
+    z-index: 100;
+    display: block; /* Ensure it's displayed as a block-level element */
+    background-color: transparent;
+
+}
+
+
+.message {
+    position: fixed;
+    z-index: 10;
+    height: 10vh;
+    font-size: 5vh;
+    font-family:fantasy;
+    font-weight: 100;
+    color: black;
+    top: 20vh;
+    left: 30vw;
+    text-align: center;
+    align-items: center;
+    display :'inline-block'; 
+  width : 'auto'; 
+}
+.score {
+    position: fixed;
+    z-index: 10;
+    height: 10vh;
+    font-size: 5vh;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 100;
+    color: rgb(14, 3, 12);
+    top: 0;
+    left: 0;
+}
+
+.score_val {
+    color: rgb(193, 170, 40);
+}
+
+.pipe_sprite{
+
+    position: absolute;
+    top: 40vh;
+    left: 100vw;
+    height: 70vh;
+    width: 6vw;
+    background: rgb(7, 133, 7);
+ 
+border-radius: 10px ; /* Rounded edges for a more pipe-like look */
+box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
