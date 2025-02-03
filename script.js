@@ -33,6 +33,11 @@ document.addEventListener('keydown', (e) => {
     }
     
 });
+document.addEventListener('touchstart', (e) => {
+    if (game_state !== 'Play') {
+        startGame();  // Start the game on touch
+    }
+});
 
 document.addEventListener('mousedown', () => {
     if (game_state === 'Play') {
